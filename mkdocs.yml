@@ -1,0 +1,39 @@
+site_name: Chicken Gut Metagenomics Pipeline
+site_description: Documentation scaffold for a reproducible chicken gut metagenomics workflow
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Conceptual workflow: workflow.md
+  - Pipeline stages:
+      - "01 — Read quality control": stages/01-fastp.md
+      - "02 — Host removal": stages/02-dehost.md
+      - "03 — Taxonomic profiling": stages/03-taxonomy.md
+      - "04 — Assembly": stages/04-assembly.md
+      - "05 — Mapping and depth": stages/05-mapping-depth.md
+      - "06 — Binning": stages/06-binning.md
+      - "07 — MAG quality assessment": stages/07-checkm2.md
+      - "08 — Dereplication": stages/08-drep.md
+      - "09 — MAG taxonomy": stages/09-gtdbtk.md
+      - "10 — MAG abundance": stages/10-coverm.md
+      - "11 — Gene catalog": stages/11-gene-catalog.md
+      - "12 — Functional annotation": stages/12-functional-annotation.md
+      - "13 — Functional abundance": stages/13-functional-abundance.md
+  - Reference placeholders:
+      - Server and environment: server-and-environment.md
+      - Software and databases: software-and-databases.md
+      - Reproducibility: reproducibility.md
+      - Outputs: outputs.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
