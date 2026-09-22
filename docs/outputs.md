@@ -2,14 +2,16 @@
 
 ## Scope
 
-This page will catalog the verified outputs of each production stage.
+This page catalogs verified output groups for stages 01–05.
 
-## Pending records
+## Verified outputs
 
-- Output names and formats
-- Producing stages
-- Downstream consumers
-- Quality-control records
-- Retention and provenance
+| Stage | Primary outputs | Completion marker |
+| --- | --- | --- |
+| 01 | Clean paired FASTQ, fastp HTML/JSON | `.fastp.done` |
+| 02 | Host-removed paired FASTQ, mapping/conversion logs | `.dehost.done` |
+| 03 | Kraken report/output, six Bracken levels | `.kraken_bracken.done` |
+| 04 | Final contigs, standardized symlink, assembly QC | `.assembly.done` |
+| 05 | Sorted BAM/BAI, flagstat, mother depth table | `.mapping_depth.done` |
 
-No output schema, file naming convention, or biological result is recorded until it is verified.
+Detailed names and validation conditions are recorded on each stage page. Outputs for stages 06–13 remain pending.

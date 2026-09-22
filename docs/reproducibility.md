@@ -2,16 +2,15 @@
 
 ## Scope
 
-This page will describe how the verified production workflow can be reproduced and audited.
+Stages 01–05 are represented by portable reference scripts derived from the archived production scripts without changing analytical flags.
 
-## Pending records
+## Evidence and controls
 
-- Input provenance
-- Script provenance
-- Configuration capture
-- Environment capture
-- Randomness and determinism
-- Execution records
-- Output validation
+- The ordered sample list is versioned at `config/samples.txt`.
+- Production paths are documented for provenance while portable scripts use configurable variables.
+- Site account, partition, QoS, and node exclusions are not embedded in portable scripts.
+- Completion markers are written only after stage-specific integrity checks.
+- QC helper scripts are retained beside their corresponding stage scripts.
+- The archived QC tables were used to verify aggregate results but are not committed.
 
-No procedural details are recorded until they are verified.
+Stages 01 and 02 rely on `SLURM_ARRAY_TASK_ID`; their original submission-time array ranges and concurrency were not captured and are not reconstructed.
