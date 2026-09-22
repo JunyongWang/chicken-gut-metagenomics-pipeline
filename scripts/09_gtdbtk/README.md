@@ -1,3 +1,3 @@
-# Script placeholder
+# Stage 09 reference script
 
-Verified production scripts will be added here in a later task after review of the original HPC workflow. No executable commands, parameters, resource requests, or environment-specific paths are included in this scaffold.
+`gtdbtk_all.sh` classifies the 374 representatives against GTDB R226 with eight CPUs and four pplacer CPUs. Set `CONDA_SH` and `GTDBTK_DATA_PATH`; optional overrides are `STAGE_DIR`, `MAG_DIR`, and `GTDBTK_OUT`.

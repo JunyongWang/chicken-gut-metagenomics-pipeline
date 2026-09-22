@@ -2,7 +2,7 @@
 
 ## Scope
 
-Stages 01–05 are represented by portable reference scripts derived from the archived production scripts without changing analytical flags.
+Stages 01–10 are represented by portable reference scripts derived from the archived production scripts without changing analytical flags.
 
 ## Evidence and controls
 
@@ -12,5 +12,7 @@ Stages 01–05 are represented by portable reference scripts derived from the ar
 - Completion markers are written only after stage-specific integrity checks.
 - QC helper scripts are retained beside their corresponding stage scripts.
 - The archived QC tables were used to verify aggregate results but are not committed.
+- Stages 06–10 retain formal sample/MAG counts, checkpoint logic, thresholds, thread allocations, Slurm resources, and output-shape validations.
+- Personal HPC paths are replaced by explicit variables; production site directives remain documented on the stage pages.
 
 Stages 01 and 02 rely on `SLURM_ARRAY_TASK_ID`; their original submission-time array ranges and concurrency were not captured and are not reconstructed.

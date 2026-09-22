@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page inventories verified software and reference databases for stages 01–05. Later stages remain pending.
+This page inventories verified software and reference databases for stages 01–10. Later stages remain pending.
 
 ## Verified inventory
 
@@ -13,6 +13,17 @@ This page inventories verified software and reference databases for stages 01–
 | 03 | Kraken2 | 2.17.1 |
 | 03 | Bracken | 3.0.1 |
 | 04 | MEGAHIT | 1.2.9 |
+| 06 | MetaBAT2 | 2.12.1 |
+| 06 | MetaWRAP | 1.3.2 |
+| 06 | MaxBin2 | Not captured in the archived production record. |
+| 06 | CONCOCT | Not captured in the archived production record. |
+| 07 | CheckM2 | 1.1.0 |
+| 08 | dRep | 3.7.1 |
+| 08 | fastANI | 1.34 |
+| 08 | Mash | 2.3 |
+| 09 | GTDB-Tk | 2.6.1 |
+| 10 | CoverM | 0.8.0 |
+| 10 | minimap2 | 2.31-r1302 |
 
 Exact versions of samtools, seqkit, and `jgi_summarize_bam_contig_depths` were not captured in the archived environment snapshot.
 
@@ -20,5 +31,7 @@ Exact versions of samtools, seqkit, and `jgi_summarize_bam_contig_depths` were n
 
 - Stage 02: chicken GRCg7b Bowtie2 index
 - Stage 03: Kraken2/Bracken database `standard_20260626`
+- Stage 07: CheckM2 UniRef100 KO database file `uniref100.KO.1.dmnd`
+- Stage 09: GTDB release R226
 
-Database acquisition dates, checksums, and build procedures: Not captured in the archived production script.
+Database acquisition dates, checksums, and build procedures: Not captured in the archived production record.
