@@ -1,3 +1,3 @@
-# Script placeholder
+# Stage 07 reference script
 
-Verified production scripts will be added here in a later task after review of the original HPC workflow. No executable commands, parameters, resource requests, or environment-specific paths are included in this scaffold.
+`checkm2_all.sh` assesses all 2,782 refined candidates and validates the result count. Set `CONDA_SH` and `CHECKM2_DB`; optional overrides are `STAGE_DIR`, `MAG_DIR`, and `CHECKM2_OUT`.

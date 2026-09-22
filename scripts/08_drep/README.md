@@ -1,3 +1,3 @@
-# Script placeholder
+# Stage 08 reference script
 
-Verified production scripts will be added here in a later task after review of the original HPC workflow. No executable commands, parameters, resource requests, or environment-specific paths are included in this scaffold.
+`drep_all.sh` dereplicates the 2,672-MAG CheckM2 50/10 set with the frozen production settings. Set `CONDA_SH`; optional overrides are `STAGE_DIR`, `MAG_DIR`, `GENOME_INFO`, and `DREP_OUT`.
