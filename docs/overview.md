@@ -1,6 +1,6 @@
 # Conceptual overview
 
-The workflow is organized around three conceptual analysis paths. Production details are currently verified for stages 01–10.
+The workflow is organized around three conceptual analysis paths. Production details are currently verified for stages 01–11.
 
 ## Read-level profiling
 
@@ -12,6 +12,6 @@ Host-removed reads support [individual-sample MEGAHIT assembly](stages/04-assemb
 
 ## Functional characterization
 
-Assemblies and MAGs support gene catalog construction, functional annotation, CAZyme analysis, KEGG Orthology analysis, and functional abundance estimation.
+Stage 11 contains two distinct verified gene workflows: a [community non-redundant gene catalog and abundance branch](stages/11-gene-catalog.md#11a-community-non-redundant-gene-catalog) from 60 individual assemblies, and a [MAG-specific gene catalog](stages/11-gene-catalog.md#11b-mag-specific-gene-catalog) from 374 representatives. Functional annotation, CAZyme analysis, KEGG Orthology analysis, and functional abundance estimation remain pending.
 
-Stages 01–10 document verified commands, parameters, resources, integrity checks, and aggregate QC from archived production sources. Stages 11–13 remain unverified placeholders.
+Stages 01–11 document verified commands, parameters, resources, integrity checks, and aggregate QC from archived production sources. Stages 12–13 remain unverified placeholders.
