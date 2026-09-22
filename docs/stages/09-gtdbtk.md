@@ -9,6 +9,8 @@ Classify the 374 dereplicated representative MAGs against GTDB release R226.
 - Exactly 374 Stage 08 representative MAGs with extension `fa`
 - GTDB reference data release R226 supplied through `GTDBTK_DATA_PATH`
 
+The production staging directory contained the verified 374 dRep representatives. The exact historical staging or symlink-creation command was not captured in the archived production record. The representative set is a verified computational decision; only its file-staging mechanics are unarchived.
+
 ## Software and version
 
 - GTDB-Tk 2.6.1
@@ -38,7 +40,7 @@ Run `scripts/09_gtdbtk/gtdbtk_all.sh` with `STAGE_DIR`, `CONDA_SH`, and `GTDBTK_
 
 ## Quality control
 
-The script requires exactly 374 input MAG links and refuses to overwrite an existing output directory. The archived final bacterial summary was checked independently for row count and non-empty genus and species rank assignments.
+The portable script accepts regular `.fa` files and symbolic links to `.fa` files, requires exactly 374 input MAGs, and refuses to overwrite an existing output directory. The archived final bacterial summary was checked independently for row count and non-empty genus and species rank assignments.
 
 ## Verified results
 

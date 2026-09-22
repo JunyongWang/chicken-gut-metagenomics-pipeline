@@ -23,7 +23,7 @@ cd "$STAGE_DIR"
 source "$CONDA_SH"
 conda activate gtdbtk
 
-N_MAG=$(find "$INPUT" -maxdepth 1 -type l -name '*.fa' | wc -l)
+N_MAG=$(find -L "$INPUT" -maxdepth 1 -type f -name '*.fa' | wc -l)
 
 echo "============================================================"
 echo "09 GTDB-Tk formal classification"

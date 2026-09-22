@@ -22,7 +22,7 @@ cd "$STAGE_DIR"
 source "$CONDA_SH"
 conda activate checkm2
 
-N_INPUT=$(find "$INPUT" -maxdepth 1 -type l -name '*.fa' | wc -l)
+N_INPUT=$(find -L "$INPUT" -maxdepth 1 -type f -name '*.fa' | wc -l)
 
 echo "============================================================"
 echo "08 dRep - species-level dereplication"

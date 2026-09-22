@@ -21,7 +21,7 @@ cd "$STAGE_DIR"
 source "$CONDA_SH"
 conda activate metagenomics
 
-N_MAG=$(find "$INPUT" -maxdepth 1 -type l -name '*.fa' | wc -l)
+N_MAG=$(find -L "$INPUT" -maxdepth 1 -type f -name '*.fa' | wc -l)
 
 echo "============================================================"
 echo "CoverM minimap2-sr database"

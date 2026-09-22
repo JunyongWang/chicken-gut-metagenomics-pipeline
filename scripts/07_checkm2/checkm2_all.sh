@@ -28,13 +28,20 @@ if [[ -e "$OUT" ]]; then
     exit 1
 fi
 
+N_INPUT=$(find -L "$INPUT" -maxdepth 1 -type f -name '*.fa' | wc -l)
+
+if [[ "$N_INPUT" -ne 2782 ]]; then
+    echo "ERROR: expected 2782 input MAGs, got $N_INPUT" >&2
+    exit 1
+fi
+
 echo "============================================================"
 echo "07 CheckM2 - ALL MAGs"
 echo "============================================================"
 echo "Node       : $SLURMD_NODENAME"
 echo "CPUs       : $SLURM_CPUS_PER_TASK"
 echo "Memory     : 24G"
-echo "Input MAGs : $(find "$INPUT" -maxdepth 1 -type l | wc -l)"
+echo "Input MAGs : $N_INPUT"
 echo "Start      : $(date)"
 echo "============================================================"
 

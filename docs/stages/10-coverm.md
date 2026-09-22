@@ -10,6 +10,8 @@ Build a minimap2-sr database from the 374 representative MAGs, quantify each sam
 - Stage 02 host-removed paired reads for 60 ordered samples
 - Stage 07 CheckM2 report and Stage 09 GTDB-Tk bacterial summary for catalog integration
 
+The production database-staging directory contained the verified 374 dRep representatives. The exact historical staging or symlink-creation command was not captured in the archived production record. The reference set is verified; only the mechanics used to populate its staging directory are unarchived.
+
 ## Software and version
 
 - CoverM 0.8.0
@@ -55,7 +57,7 @@ The portable scripts expose stage, work, sample-list, conda, database/index, rep
 
 ## Quality control
 
-Database creation requires exactly 374 input MAGs. Each sample table must have 376 lines: one header, 374 MAG rows, and one `unmapped` row. The merge script requires exactly 60 samples, 374 unique MAGs per sample, one unmapped row, five columns, and identical MAG sets across all samples.
+Database creation accepts regular `.fa` files and symbolic links to `.fa` files and requires exactly 374 input MAGs. Each sample table must have 376 lines: one header, 374 MAG rows, and one `unmapped` row. The merge script requires exactly 60 samples, 374 unique MAGs per sample, one unmapped row, five columns, and identical MAG sets across all samples.
 
 Each merged matrix is 374 MAGs by 60 samples: 375 rows including the header and 61 columns including `Genome`. Catalog creation requires 60 matrix columns, 374 GTDB genomes, and matching CheckM2 and CoverM records.
 

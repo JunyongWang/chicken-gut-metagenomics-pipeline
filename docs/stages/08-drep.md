@@ -9,6 +9,8 @@ Dereplicate the CheckM2 50/10 MAG set at 95% secondary ANI and select one repres
 - Exactly 2,672 MAGs passing CheckM2 completeness `>= 50%` and contamination `<= 10%`
 - `genomeInfo.csv` with 2,672 data rows plus its header
 
+The filtering criterion and final 2,672-MAG input set are verified biological and computational decisions. The exact historical staging command used to create `input_mags` and `genomeInfo.csv` was not captured in the archived production record. This unarchived file-staging mechanism does not alter the verified filter or final input set.
+
 ## Software and version
 
 - dRep 3.7.1
@@ -40,7 +42,7 @@ Run `scripts/08_drep/drep_all.sh` with `STAGE_DIR` and `CONDA_SH` set. `MAG_DIR`
 
 ## Quality control
 
-The script requires exactly 2,672 input `fa` links, refuses to overwrite an existing dRep output directory, and requires the `dereplicated_genomes` directory after completion.
+The portable script accepts regular `.fa` files and symbolic links to `.fa` files and requires exactly 2,672 inputs. It refuses to overwrite an existing dRep output directory and requires the `dereplicated_genomes` directory after completion.
 
 ## Verified results
 

@@ -9,6 +9,8 @@ Estimate completeness and contamination for all Stage 06 refined candidates and 
 - Exactly 2,782 Stage 06 refined candidate MAGs with extension `fa`
 - CheckM2 UniRef100 KO database file `uniref100.KO.1.dmnd`
 
+The verified production input was exactly 2,782 refined candidates. The exact historical shell command used to gather them into the CheckM2 staging directory was not captured in the archived production record. This missing file-staging detail does not change the verified candidate set or its required count.
+
 ## Software and version
 
 - CheckM2 1.1.0
@@ -35,7 +37,7 @@ Run `scripts/07_checkm2/checkm2_all.sh` with `STAGE_DIR`, `CONDA_SH`, and `CHECK
 
 ## Quality control
 
-The script refuses to overwrite an existing output directory, requires a non-empty `quality_report.tsv`, and requires exactly 2,782 result rows before writing `.checkm2.done`.
+The portable script accepts regular `.fa` files and symbolic links to `.fa` files in the input directory. It refuses to overwrite an existing output directory, requires a non-empty `quality_report.tsv`, and requires exactly 2,782 result rows before writing `.checkm2.done`.
 
 The full production `quality_report.tsv` was not retained in the archived handoff. The supplied threshold-count table is the verified frozen project record.
 
