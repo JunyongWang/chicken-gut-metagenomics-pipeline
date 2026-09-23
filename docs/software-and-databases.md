@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page inventories verified software and reference databases for stages 01–11. Later stages remain pending.
+This page inventories verified software and reference databases for stages 01–12. Stage 13 remains pending.
 
 ## Verified inventory
 
@@ -28,8 +28,10 @@ This page inventories verified software and reference databases for stages 01–
 | 11A | MMseqs2 | 18.8cc5c |
 | 11A | Salmon | 2.7.0 |
 | 11A | seqkit | Not captured in the archived production record. |
+| 12A | eggNOG-mapper | 2.1.15 |
+| 12B | dbCAN | 5.2.9 |
 
-Exact versions of samtools, seqkit, and `jgi_summarize_bam_contig_depths` were not captured in the archived environment snapshot.
+Exact versions of samtools, seqkit, `jgi_summarize_bam_contig_depths`, and dbCAN's underlying helper executables were not all captured in the archived environment snapshot.
 
 ## Verified references
 
@@ -37,5 +39,7 @@ Exact versions of samtools, seqkit, and `jgi_summarize_bam_contig_depths` were n
 - Stage 03: Kraken2/Bracken database `standard_20260626`
 - Stage 07: CheckM2 UniRef100 KO database file `uniref100.KO.1.dmnd`
 - Stage 09: GTDB release R226
+- Stage 12A: eggNOG database 5.0.2
+- Stage 12B: dbCAN 5.2.9 database containing `CAZy.dmnd`, `dbCAN.hmm`, `dbCAN-sub.hmm`, and `fam-substrate-mapping.tsv`
 
-Database acquisition dates, checksums, and build procedures: Not captured in the archived production record.
+Database acquisition dates, checksums, and build procedures are documented only where retained in the production archive; otherwise they are not reconstructed.

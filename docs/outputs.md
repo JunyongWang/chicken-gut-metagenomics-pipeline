@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page catalogs verified output groups for stages 01–11.
+This page catalogs verified output groups for stages 01–12.
 
 ## Verified outputs
 
@@ -20,5 +20,7 @@ This page catalogs verified output groups for stages 01–11.
 | 10 | CoverM database, per-sample tables, four matrices, mapping summary, MAG catalog | `.makedb.done`, per-sample `.coverm.done` |
 | 11A | Community NR nucleotide/protein catalogs, cluster membership, Salmon results, TPM and NumReads matrices | `.prodigal.done`, `.merge_ffn.done`, `.mmseqs95_90.done`, `.nr_protein.done`, `.salmon_index.done`, `.salmon.done`, `.merge_salmon.done` |
 | 11B | MAG-specific nucleotide/protein catalogs, gene-to-MAG mapping, per-MAG summary | `.prodigal.done`, `.merge_MAG_genes.done` |
+| 12A | NR and MAG eggNOG annotations, seed orthologs, chunk/batch QC, final summaries | `.split.done`, `.eggnog.done`, `.search.done`, `.annotation.done`, merge `.done` markers |
+| 12B | NR and MAG dbCAN overview/recommended tables, NR family abundance matrices, MAG × family matrix, MAG-weighted CAZyme TPM | `.dbcan.done`, merge `.done`, `.abundance.done` where wrapped |
 
-Detailed names and validation conditions are recorded on each stage page. Outputs for stages 12–13 remain pending.
+Detailed names and validation conditions are recorded on each stage page. Stage 13 outputs remain pending documentation.
