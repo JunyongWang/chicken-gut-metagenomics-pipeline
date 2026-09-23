@@ -1,6 +1,6 @@
 # Conceptual overview
 
-The workflow is organized around three conceptual analysis paths. Production details are currently verified for stages 01–11.
+The workflow is organized around three conceptual analysis paths. Production details are currently verified for stages 01–12.
 
 ## Read-level profiling
 
@@ -12,6 +12,8 @@ Host-removed reads support [individual-sample MEGAHIT assembly](stages/04-assemb
 
 ## Functional characterization
 
-Stage 11 contains two distinct verified gene workflows: a [community non-redundant gene catalog and abundance branch](stages/11-gene-catalog.md#11a-community-non-redundant-gene-catalog) from 60 individual assemblies, and a [MAG-specific gene catalog](stages/11-gene-catalog.md#11b-mag-specific-gene-catalog) from 374 representatives. Functional annotation, CAZyme analysis, KEGG Orthology analysis, and functional abundance estimation remain pending.
+Stage 11 contains two distinct gene workflows: a [community non-redundant gene catalog and abundance branch](stages/11-gene-catalog.md#11a-community-non-redundant-gene-catalog) from 60 individual assemblies and a [MAG-specific gene catalog](stages/11-gene-catalog.md#11b-mag-specific-gene-catalog) from 374 representatives.
 
-Stages 01–11 document verified commands, parameters, resources, integrity checks, and aggregate QC from archived production sources. Stages 12–13 remain unverified placeholders.
+[Stage 12](stages/12-functional-annotation.md) annotates both protein catalogs with eggNOG-mapper, performs dbCAN CAZyme annotation, aggregates community NR CAZyme-family abundance, builds a MAG × CAZyme family gene-count matrix, and derives MAG-abundance-weighted CAZyme TPM. Stage 13 KEGG Orthology abundance remains pending documentation.
+
+Stages 01–12 document verified commands, parameters, resources where archived, integrity checks, and aggregate QC from production sources. Stage 13 remains an unverified placeholder.
