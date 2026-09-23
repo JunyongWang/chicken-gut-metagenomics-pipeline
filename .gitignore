@@ -217,3 +217,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific generated data and large bioinformatics artifacts
+/data/
+/work/
+/results/
+/references/
+/refs/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+*.dmnd
+*.mmi
+*.bt2
+*.bt2l
+*.msh
+
+# Private/source-of-truth handoff archives
+HANDOFF_*
+BATCH*_SOURCE_OF_TRUTH*
+STAGE12_13_SOURCE_*
