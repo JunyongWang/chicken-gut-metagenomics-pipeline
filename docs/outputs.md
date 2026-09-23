@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page catalogs verified output groups for stages 01–12.
+This page catalogs verified output groups for stages 01–13.
 
 ## Verified outputs
 
@@ -22,5 +22,8 @@ This page catalogs verified output groups for stages 01–12.
 | 11B | MAG-specific nucleotide/protein catalogs, gene-to-MAG mapping, per-MAG summary | `.prodigal.done`, `.merge_MAG_genes.done` |
 | 12A | NR and MAG eggNOG annotations, seed orthologs, chunk/batch QC, final summaries | `.split.done`, `.eggnog.done`, `.search.done`, `.annotation.done`, merge `.done` markers |
 | 12B | NR and MAG dbCAN overview/recommended tables, NR family abundance matrices, MAG × family matrix, MAG-weighted CAZyme TPM | `.dbcan.done`, merge `.done`, `.abundance.done` where wrapped |
+| 13A | NR gene-to-KO map, KO TPM/NumReads matrices, abundance QC, summary | `.ko_abundance.done` |
+| 13B | MAG gene-to-KO map, MAG × KO gene-count matrix, KO totals, MAG and global summaries | No formal completion marker retained |
+| 13C | MAG-weighted KO TPM, per-sample conservation QC, weighted summary | No formal completion marker retained |
 
-Detailed names and validation conditions are recorded on each stage page. Stage 13 outputs remain pending documentation.
+Detailed names and validation conditions are recorded on each stage page. The verified formal workflow ends at KO-level Stage 13 outputs; no downstream KEGG pathway/module matrix is reconstructed.

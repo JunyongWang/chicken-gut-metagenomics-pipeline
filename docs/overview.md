@@ -1,6 +1,6 @@
 # Conceptual overview
 
-The workflow is organized around three conceptual analysis paths. Production details are currently verified for stages 01–12.
+The workflow is organized around three conceptual analysis paths. Production details are verified for stages 01–13.
 
 ## Read-level profiling
 
@@ -14,6 +14,8 @@ Host-removed reads support [individual-sample MEGAHIT assembly](stages/04-assemb
 
 Stage 11 contains two distinct gene workflows: a [community non-redundant gene catalog and abundance branch](stages/11-gene-catalog.md#11a-community-non-redundant-gene-catalog) from 60 individual assemblies and a [MAG-specific gene catalog](stages/11-gene-catalog.md#11b-mag-specific-gene-catalog) from 374 representatives.
 
-[Stage 12](stages/12-functional-annotation.md) annotates both protein catalogs with eggNOG-mapper, performs dbCAN CAZyme annotation, aggregates community NR CAZyme-family abundance, builds a MAG × CAZyme family gene-count matrix, and derives MAG-abundance-weighted CAZyme TPM. Stage 13 KEGG Orthology abundance remains pending documentation.
+[Stage 12](stages/12-functional-annotation.md) annotates both protein catalogs with eggNOG-mapper, performs dbCAN CAZyme annotation, aggregates community NR CAZyme-family abundance, builds a MAG × CAZyme family gene-count matrix, and derives MAG-abundance-weighted CAZyme TPM.
 
-Stages 01–12 document verified commands, parameters, resources where archived, integrity checks, and aggregate QC from production sources. Stage 13 remains an unverified placeholder.
+[Stage 13](stages/13-functional-abundance.md) parses eggNOG `KEGG_ko` assignments to produce community NR KO TPM/NumReads matrices, a 374-MAG × KO gene-count matrix, and MAG-abundance-weighted KO TPM. The verified workflow ends at KO-level outputs; it does not reconstruct KEGG pathway/module abundance.
+
+Stages 01–13 document verified production commands, parameters, archived resources where available, integrity checks, and aggregate QC. Missing historical submission details are explicitly left undocumented rather than inferred.
