@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page inventories verified software and reference databases for stages 01–10. Later stages remain pending.
+This page inventories verified software and reference databases for stages 01–11. Later stages remain pending.
 
 ## Verified inventory
 
@@ -24,6 +24,10 @@ This page inventories verified software and reference databases for stages 01–
 | 09 | GTDB-Tk | 2.6.1 |
 | 10 | CoverM | 0.8.0 |
 | 10 | minimap2 | 2.31-r1302 |
+| 11A and 11B | Prodigal | 2.6.3 |
+| 11A | MMseqs2 | 18.8cc5c |
+| 11A | Salmon | 2.7.0 |
+| 11A | seqkit | Not captured in the archived production record. |
 
 Exact versions of samtools, seqkit, and `jgi_summarize_bam_contig_depths` were not captured in the archived environment snapshot.
 

@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page catalogs verified output groups for stages 01–10.
+This page catalogs verified output groups for stages 01–11.
 
 ## Verified outputs
 
@@ -18,5 +18,7 @@ This page catalogs verified output groups for stages 01–10.
 | 08 | dRep work directory and 374 representatives | `.drep95.done` |
 | 09 | GTDB-Tk R226 classifications and bacterial summary | `.gtdbtk.done` |
 | 10 | CoverM database, per-sample tables, four matrices, mapping summary, MAG catalog | `.makedb.done`, per-sample `.coverm.done` |
+| 11A | Community NR nucleotide/protein catalogs, cluster membership, Salmon results, TPM and NumReads matrices | `.prodigal.done`, `.merge_ffn.done`, `.mmseqs95_90.done`, `.nr_protein.done`, `.salmon_index.done`, `.salmon.done`, `.merge_salmon.done` |
+| 11B | MAG-specific nucleotide/protein catalogs, gene-to-MAG mapping, per-MAG summary | `.prodigal.done`, `.merge_MAG_genes.done` |
 
-Detailed names and validation conditions are recorded on each stage page. Outputs for stages 11–13 remain pending.
+Detailed names and validation conditions are recorded on each stage page. Outputs for stages 12–13 remain pending.
