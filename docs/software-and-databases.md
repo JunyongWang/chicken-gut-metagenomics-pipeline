@@ -2,7 +2,7 @@
 
 ## Scope
 
-This page inventories verified software and reference databases for stages 01–12. Stage 13 remains pending.
+This page inventories verified software and reference databases for stages 01–13.
 
 ## Verified inventory
 
@@ -31,6 +31,8 @@ This page inventories verified software and reference databases for stages 01–
 | 12A | eggNOG-mapper | 2.1.15 |
 | 12B | dbCAN | 5.2.9 |
 
+Stage 13 introduces no new annotation database or search engine: it parses the `KEGG_ko` assignments already produced by Stage 12A and combines them with Stage 11A gene abundance or Stage 10 MAG TPM using archived Python aggregation scripts. The Python interpreter version used by the Stage 13 production wrapper is not treated as a separately captured frozen software version.
+
 Exact versions of samtools, seqkit, `jgi_summarize_bam_contig_depths`, and dbCAN's underlying helper executables were not all captured in the archived environment snapshot.
 
 ## Verified references
@@ -41,5 +43,6 @@ Exact versions of samtools, seqkit, `jgi_summarize_bam_contig_depths`, and dbCAN
 - Stage 09: GTDB release R226
 - Stage 12A: eggNOG database 5.0.2
 - Stage 12B: dbCAN 5.2.9 database containing `CAZy.dmnd`, `dbCAN.hmm`, `dbCAN-sub.hmm`, and `fam-substrate-mapping.tsv`
+- Stage 13: eggNOG `KEGG_ko` assignments inherited from the verified Stage 12A outputs; no additional KEGG database build or pathway mapping step is present in the archived workflow
 
 Database acquisition dates, checksums, and build procedures are documented only where retained in the production archive; otherwise they are not reconstructed.
